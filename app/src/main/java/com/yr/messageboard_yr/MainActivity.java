@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity implements ActionCallback, S
         mMainViewModel.getAllMessages().observe(this, new Observer<List<Message>>() {
             @Override
             public void onChanged(@Nullable final List<Message> words) {
-                // Update the cached copy of the words in the adapter.
                 adapter.setMessages(words);
             }
         });
@@ -56,6 +55,9 @@ public class MainActivity extends AppCompatActivity implements ActionCallback, S
                 Message message = new Message(mName.getText().toString(), mContent.getText().toString());
                 mMainViewModel.insert(message);
                 Toast.makeText(MainActivity.this, "送出", Toast.LENGTH_SHORT).show();
+
+                mName.setText("");
+                mContent.setText("");
             }
         });
     }
