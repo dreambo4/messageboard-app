@@ -1,4 +1,4 @@
-package com.yr.messageboard_yr;
+package com.yr.messageboard_yr.view;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +14,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.yr.messageboard_yr.viewmodel.MainViewModel;
+import com.yr.messageboard_yr.data.db.entity.Message;
+import com.yr.messageboard_yr.R;
 
 import java.util.List;
 

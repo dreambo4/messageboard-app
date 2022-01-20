@@ -1,4 +1,4 @@
-package com.yr.messageboard_yr;
+package com.yr.messageboard_yr.data.db.dao;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
@@ -7,6 +7,8 @@ import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
+
+import com.yr.messageboard_yr.data.db.entity.Message;
 
 import java.util.List;
 

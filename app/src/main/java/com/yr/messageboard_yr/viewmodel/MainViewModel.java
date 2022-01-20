@@ -1,4 +1,4 @@
-package com.yr.messageboard_yr;
+package com.yr.messageboard_yr.viewmodel;
 
 
 import android.app.Application;
@@ -7,6 +7,10 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
+
+import com.yr.messageboard_yr.data.db.entity.Message;
+import com.yr.messageboard_yr.repository.MessagesRepository;
+import com.yr.messageboard_yr.view.StatusMessageCallback;
 
 import java.util.List;
 import java.util.concurrent.ExecutionException;
@@ -27,7 +31,7 @@ public class MainViewModel extends AndroidViewModel {
         mCallback = callback;
     }
 
-    LiveData<List<Message>> getAllMessages() {
+    public LiveData<List<Message>> getAllMessages() {
         return mAllMessages;
     }
 

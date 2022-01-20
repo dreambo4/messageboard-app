@@ -1,16 +1,17 @@
-package com.yr.messageboard_yr;
+package com.yr.messageboard_yr.viewmodel;
 
 
 import android.app.Application;
-import android.content.Intent;
 import android.util.Log;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-import java.util.List;
+import com.yr.messageboard_yr.view.EditCallback;
+import com.yr.messageboard_yr.data.db.entity.Message;
+import com.yr.messageboard_yr.repository.MessagesRepository;
+
 import java.util.concurrent.ExecutionException;
 
 public class EditViewModel extends AndroidViewModel {
@@ -27,7 +28,7 @@ public class EditViewModel extends AndroidViewModel {
         mEditCallback = editCallback;
     }
 
-    LiveData<Message> getMessage(String id) {
+    public LiveData<Message> getMessage(String id) {
         LiveData<Message> message = mMessagesRepository.get(id);
         return message;
     }

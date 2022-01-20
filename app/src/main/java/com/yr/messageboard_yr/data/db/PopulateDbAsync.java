@@ -1,6 +1,9 @@
-package com.yr.messageboard_yr;
+package com.yr.messageboard_yr.data.db;
 
 import android.os.AsyncTask;
+
+import com.yr.messageboard_yr.data.db.MessageBoardRoomDatabase;
+import com.yr.messageboard_yr.data.db.dao.MessageDao;
 
 public class PopulateDbAsync extends AsyncTask<Void, Void, Void> {
     private final MessageDao mDao;

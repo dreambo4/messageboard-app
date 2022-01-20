@@ -1,4 +1,4 @@
-package com.yr.messageboard_yr;
+package com.yr.messageboard_yr.view;
 
 public interface EditCallback {
     void onSuccess(String msg);

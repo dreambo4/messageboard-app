@@ -1,6 +1,5 @@
-package com.yr.messageboard_yr;
+package com.yr.messageboard_yr.view;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
@@ -15,7 +14,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.List;
+import com.yr.messageboard_yr.viewmodel.EditViewModel;
+import com.yr.messageboard_yr.data.db.entity.Message;
+import com.yr.messageboard_yr.R;
 
 public class EditActivity extends AppCompatActivity implements EditCallback {
 

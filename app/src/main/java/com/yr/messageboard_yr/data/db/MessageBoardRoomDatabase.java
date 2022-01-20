@@ -1,4 +1,4 @@
-package com.yr.messageboard_yr;
+package com.yr.messageboard_yr.data.db;
 
 import android.content.Context;
 
@@ -7,6 +7,9 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
+
+import com.yr.messageboard_yr.data.db.dao.MessageDao;
+import com.yr.messageboard_yr.data.db.entity.Message;
 
 @Database(entities = {Message.class}, version = 1, exportSchema = false)
 public abstract class MessageBoardRoomDatabase extends RoomDatabase {

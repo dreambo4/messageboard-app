@@ -1,4 +1,4 @@
-package com.yr.messageboard_yr;
+package com.yr.messageboard_yr.data.db.entity;
 
 import android.os.Parcel;
 import android.os.Parcelable;

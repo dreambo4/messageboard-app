@@ -1,4 +1,4 @@
-package com.yr.messageboard_yr;
+package com.yr.messageboard_yr.repository;
 
 import android.app.Application;
 import android.os.AsyncTask;
@@ -9,6 +9,10 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 import static androidx.core.util.Preconditions.checkNotNull;
+
+import com.yr.messageboard_yr.data.db.entity.Message;
+import com.yr.messageboard_yr.data.db.MessageBoardRoomDatabase;
+import com.yr.messageboard_yr.data.db.dao.MessageDao;
 
 public class MessagesRepository {
     private MessageDao mMessageDao;

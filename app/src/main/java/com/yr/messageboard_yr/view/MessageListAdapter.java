@@ -1,4 +1,4 @@
-package com.yr.messageboard_yr;
+package com.yr.messageboard_yr.view;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -11,6 +11,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.yr.messageboard_yr.data.db.entity.Message;
+import com.yr.messageboard_yr.R;
 
 import java.text.SimpleDateFormat;
 import java.util.List;
